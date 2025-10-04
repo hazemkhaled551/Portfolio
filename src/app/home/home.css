@@ -1,0 +1,48 @@
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 20px;
+}
+.home-text p:first-child, .home-text p:nth-child(3) {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 24px;
+}
+
+.home-text h1 {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 64px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.home-text h1 span {
+  color: var(--primary-color);
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons button:first-child {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.buttons button:last-child {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  margin-left: 15px;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

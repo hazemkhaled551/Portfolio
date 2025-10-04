@@ -1,0 +1,38 @@
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+footer {
+  background-color: #1e1e1e;
+  position: relative;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+li:not(:last-child) {
+  margin-right: 15px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  position: absolute;
+  right: 45%;
+  bottom: 41px;
+}
+button:hover {
+  border: 1px solid var(--primary-color);
+}
+span {
+  color: var(--primary-color);
+  font-family: 'Pacifico', cursive;
+}

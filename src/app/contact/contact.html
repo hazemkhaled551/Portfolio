@@ -1,0 +1,51 @@
+<section id="contact" class="contact my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="content">
+          <p>Get in Touch</p>
+          <h2>Let’s Talk For your <span>Next Projects</span></h2>
+          <p>
+            Discuss a project or just want to say hi? Connect with me via email or through a phone
+            call.
+          </p>
+          <app-points [points]="points"></app-points>
+          <app-links></app-links>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="form">
+          <form action="">
+            <div class="row">
+              @for (item of inputs; track $index) {
+              <div class="col-6">
+                <div class="mb-5">
+                  <label [for]="item.name" class="form-label mb-3">{{ item.name }}</label>
+                  <input
+                    [type]="item.type"
+                    class="form-control"
+                    [id]="item.name"
+                    [placeholder]="item.placeholder"
+                  />
+                </div>
+              </div>
+              }
+              <div class="col-12">
+                <div class="mb-5">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    placeholder="Write your message..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <app-button [text]="'Send Message'" ></app-button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

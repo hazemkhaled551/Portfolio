@@ -1,0 +1,18 @@
+.form label {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: semi-bold;
+}
+.form input,
+.form textarea {
+  border-radius: 0px;
+  border: none;
+  background-color: #1e1e1e9e;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #444444;
+}

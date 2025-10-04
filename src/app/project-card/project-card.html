@@ -1,0 +1,83 @@
+@if(index() % 2 !== 0){
+<div class="project-card">
+  <div class="row gx-5">
+    <div class="col-md-6">
+      <div class="content ">
+        <span>{{ project().projectName }}</span>
+        <h3>{{ project().title }}</h3>
+        <p>{{ project().description }}</p>
+        <a [href]="project().link">
+          <svg
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.375 27.625L27.625 11.375"
+              stroke="#DBDBDB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11.375 11.375H27.625V27.625"
+              stroke="#DBDBDB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="img">
+        <img [src]="project().img" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+} @else{
+<div class="project-card">
+  <div class="row gx-5">
+    <div class="col-md-6">
+      <div class="img">
+        <img [src]="project().img" alt="" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="content ">
+        <span>{{ project().projectName }}</span>
+        <h3>{{ project().title }}</h3>
+        <p>{{ project().description }}</p>
+        <a [href]="project().link">
+          <svg
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.375 27.625L27.625 11.375"
+              stroke="#DBDBDB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11.375 11.375H27.625V27.625"
+              stroke="#DBDBDB"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+}

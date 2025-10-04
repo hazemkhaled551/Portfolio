@@ -1,0 +1,11 @@
+.skill {
+  margin-top: 30px;
+}
+.skill p {
+  font-family: 'inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: regular;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 40px;
+}

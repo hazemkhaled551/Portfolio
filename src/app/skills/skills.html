@@ -1,0 +1,19 @@
+<section id="skills" class="skills py-5">
+  <div class="container">
+    <div class="heading">
+      <p>My <span>Talent</span></p>
+      <h2>professional skills</h2>
+    </div>
+    <div class="cards">
+      <div class="row gy-3">
+        
+        @for (item of skills; track $index) {
+        <div class="col col-lg-3">
+          <app-cards [service]="item"></app-cards>
+        </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</section>

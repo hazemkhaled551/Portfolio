@@ -1,0 +1,13 @@
+<div class="card">
+  @if(service().icon){
+  <i [class]="service().icon" aria-hidden="true"></i>
+  }@else {
+  <img src="{{ service().src }}" alt="" />
+  } @if(service().title){
+
+  <h3>{{ service().title }}</h3>
+  }@else{
+  <h5 class="mt-3">{{ service().skill }}</h5>
+  }
+  <p>{{ service().description }}</p>
+</div>

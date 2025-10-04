@@ -1,0 +1,33 @@
+<div class="accordion-item">
+  <h3 class="accordion-header">
+    <button
+      class="accordion-button"
+      type="button"
+      data-bs-toggle="collapse"
+      [attr.data-bs-target]="'#' + accordionItem().id"
+      aria-expanded="false"
+      [attr.aria-controls]="accordionItem().id"
+    >
+      <i class="fa-solid fa-plus"></i>
+    </button>
+
+{{ accordionItem().company }}
+  </h3>
+  <div
+    [id]="accordionItem().id"
+    class="accordion-collapse collapse "
+    data-bs-parent="#accordionExample"
+  >
+    <div class="accordion-body">
+      <div class="head d-flex justify-content-between align-items-center mb-4">
+        <p>{{ accordionItem().title }}</p>
+        <p>{{ accordionItem().startDate }} - {{ accordionItem().endDate }}</p>
+      </div>
+      <div class="body">
+        <p>
+          {{ accordionItem().desc }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

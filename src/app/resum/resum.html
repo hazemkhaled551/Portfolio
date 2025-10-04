@@ -1,0 +1,36 @@
+<section id="resume" class="resume my-5">
+  <div class="container">
+    <div class="heading">
+      <p>My <span>Resume</span></p>
+      <h2>
+        Real <span> Problem Solutions</span> <br />
+        Experience
+      </h2>
+    </div>
+    <div class="accordions">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="education">
+            <h3 class="mb-4 text-center">Education</h3>
+            <div class="accordion" id="accordionExample">
+              @for (item of education; track $index) {
+              <app-resum-accordien [accordionItem]="item"></app-resum-accordien>
+              }
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="experience">
+            <h3 class="mb-4 text-center">Experience</h3>
+
+            <div class="accordion" id="accordionExample">
+              @for (item of experience; track $index) {
+              <app-resum-accordien [accordionItem]="item"></app-resum-accordien>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

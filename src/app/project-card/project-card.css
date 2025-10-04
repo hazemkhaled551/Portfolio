@@ -1,0 +1,63 @@
+.project-card {
+  margin-top: 35px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #444444;
+ overflow: hidden;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.content span {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: Regular;
+  font-family: 'inter', sans-serif;
+  margin-top: 15px;
+}
+
+.content h3 {
+  font-size: 40px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: 'inter', sans-serif;
+  margin-top: 15px;
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: 'inter', sans-serif;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 15px;
+}
+
+.content a {
+  border: 2px solid #1e1e1e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+

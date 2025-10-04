@@ -1,0 +1,16 @@
+.heading{
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "inter", sans-serif;
+  
+}
+.heading p{
+    font-size: 16px;
+}
+
+.heading p span{
+    color:  var(--primary-color);
+}

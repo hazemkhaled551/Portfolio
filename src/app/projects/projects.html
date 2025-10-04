@@ -1,0 +1,16 @@
+<section id="services" class="services my-5">
+  <div class="container">
+    <div class="heading">
+      <p>Latest Works</p>
+      <h2>Explore My Popular <span>Projects</span></h2>
+    </div>
+    <div class="cards">
+      @for (item of projects; track $index) {
+        <app-project-card [project]="item" [index]="$index"></app-project-card>
+      }
+    </div>
+   <div class="button">
+     <app-button [text]="'View More Projects'"></app-button>
+   </div>
+  </div>
+</section>

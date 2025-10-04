@@ -1,0 +1,42 @@
+<footer>
+  <div class="container">
+    <div class="content">
+      <p>Copyright @2024, <span>Wilson Kinyua</span>. All Rights Reserved</p>
+    </div>
+    <div class="top-btn">
+      <button type="button" class="btn">
+        <svg
+          width="53"
+          height="53"
+          viewBox="0 0 53 53"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M37.5417 24.2917L26.5 13.25L15.4583 24.2917"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M37.5417 39.7497L26.5 28.708L15.4583 39.7497"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="links">
+      <ul>
+        @for (item of links; track $index) {
+        <li>
+          <a href="#">{{ item }}</a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</footer>

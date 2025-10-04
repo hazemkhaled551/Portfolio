@@ -1,0 +1,9 @@
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+button:hover {
+
+ border : 1px solid var(--primary-color);
+
+}

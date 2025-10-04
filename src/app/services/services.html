@@ -1,0 +1,20 @@
+<section id="services">
+  <div class="container">
+    <div class="heading">
+      <h2>
+        My <span>Special Services</span> For your <br />
+        Business <span>Development</span>
+      </h2>
+    </div>
+    <div class="cards">
+      <div class="row gy-3">
+        @for (item of services; track $index) {
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-cards [service]="item"></app-cards>
+        </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</section>
